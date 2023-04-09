@@ -15,7 +15,7 @@ const RenderCountExample2 = () => {
             <SmallTitle>Подсчет количества рендеров</SmallTitle>
             <p>render count: {renderCount}</p>
             <button className="btn btn-primary m-2" onClick={handleRender}>
-                ;vb
+                жмык
             </button>
         </CardWrapper>
     )

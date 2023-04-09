@@ -5,6 +5,7 @@ import BlockQuote from '../components/common/BlockQuote'
 import Divider from '../components/common/Divider'
 import Subtitle from '../components/common/typografy/Subtitle'
 import RenderCountExample2 from '../components/examples/useEffect/renderCount2'
+import PrevStateExample from '../components/examples/useRef/prevState'
 
 const UseEffect = () => {
     return (
@@ -54,8 +55,8 @@ const UseEffect = () => {
             <div>
                 <Subtitle>Примеры</Subtitle>
                 <RenderCountExample2 />
-                {/* <PrevStateExample /> */}
-                {/* <ProgrammableActionsExample /> */}
+                <h6 className="text-danger">работает совмемтно с useRef</h6>
+                <PrevStateExample />
             </div>
         </>
     )
