@@ -6,11 +6,11 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <ul className="nav">
-                {/* <li className="nav-item">
+                <li className="nav-item">
                     <NavLink className="nav-link" aria-current="page" to="/">
                         Main
                     </NavLink>
-                </li> */}
+                </li>
                 {/* <li className="nav-item">
                     <NavLink
                         className="nav-link "
@@ -38,7 +38,7 @@ const NavBar = () => {
                         useEffect
                     </NavLink>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                     <NavLink
                         className="nav-link "
                         aria-current="page"
@@ -46,7 +46,7 @@ const NavBar = () => {
                     >
                         useRef
                     </NavLink>
-                </li> */}
+                </li>
                 {/* <li className="nav-item">
                     <NavLink
                         className="nav-link "

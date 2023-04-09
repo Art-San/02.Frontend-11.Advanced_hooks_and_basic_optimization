@@ -33,6 +33,9 @@ const UseRefExample = () => {
                 <Subtitle>Examples</Subtitle>
                 <RenderCountExample />
                 <PrevStateExample />
+                <h5 className="text-danger">
+                    в ProgrammableActionsExample три вариана, два от GPT
+                </h5>
                 <ProgrammableActionsExample />
                 <ExampleFileInput />
             </div>
