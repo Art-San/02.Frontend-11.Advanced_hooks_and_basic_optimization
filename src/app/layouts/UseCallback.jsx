@@ -11,6 +11,10 @@ const UseCallbackExample = () => {
     return (
         <>
             <Title>useCallback</Title>
+            <p className="text-danger text-center">
+                С помощью useCallback() можно предотвращать ненужные рендендеры
+                дочерних компонентов, которым мы передаем callback функцию.
+            </p>
 
             <Collapse title="Информация">
                 <BlockQuoteWrapper>
