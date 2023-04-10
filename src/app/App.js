@@ -9,7 +9,7 @@ import UseState from './layouts/UseState'
 import UseEffect from './layouts/UseEffect'
 import UseRefExample from './layouts/UseRef'
 import UseMemoExample from './layouts/UseMemo'
-// import UseCallbackExample from './layouts/UseCallback'
+import UseCallbackExample from './layouts/UseCallback'
 // import HOCLayout from './layouts/Hoc'
 // import MemoExample from './layouts/Memo'
 // import CloneElement from './layouts/CloneElement'
@@ -27,7 +27,7 @@ function App() {
                     {/* <Route path="/cloneElement" component={CloneElement} /> */}
                     {/* <Route path="/memo" component={MemoExample} /> */}
                     {/* <Route path="/hoc" component={HOCLayout} /> */}
-                    {/* <Route path="/useCallback" component={UseCallbackExample} /> */}
+                    <Route path="/useCallback" component={UseCallbackExample} />
                     <Route path="/useMemo" component={UseMemoExample} />
                     <Route path="/useRef" component={UseRefExample} />
                     <Route path="/useEffect" exact component={UseEffect} />
