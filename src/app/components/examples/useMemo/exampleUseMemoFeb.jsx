@@ -38,7 +38,7 @@ const ExampleUseMemoFeb = () => {
                     className="btn btn-primary mx-2"
                     onClick={() => setValue((v) => v - 1000)}
                 >
-                    dDecrement
+                    Decrement
                 </button>
             </div>
             <div>
