@@ -13,6 +13,11 @@ const UseRefExample = () => {
     return (
         <>
             <Title>useRef</Title>
+            <p className="text-danger">
+                В useRef() можно сохранять любое значение и хранить/изменять его
+                в течение всей жизни компонента. При изменении значения не
+                произойдет повторный рендер.
+            </p>
             <CollapseWrapper>
                 <BlockQuote>
                     <p>
