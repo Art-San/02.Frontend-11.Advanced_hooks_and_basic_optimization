@@ -10,6 +10,10 @@ const UseMemoExample = () => {
     return (
         <>
             <Title>useMemo</Title>
+            <p className="text-danger">
+                С помощью useMemo() можно избежать дорогостоящих вычислений при
+                каждом рендере.
+            </p>
             <CollapseWrapper title="Mемоизация">
                 <BlockQuote>
                     <p className="mt-2">
