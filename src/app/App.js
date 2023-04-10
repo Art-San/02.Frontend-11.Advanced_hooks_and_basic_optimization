@@ -8,7 +8,7 @@ import Main from './layouts/Main'
 import UseState from './layouts/UseState'
 import UseEffect from './layouts/UseEffect'
 import UseRefExample from './layouts/UseRef'
-// import UseMemoExample from './layouts/UseMemo'
+import UseMemoExample from './layouts/UseMemo'
 // import UseCallbackExample from './layouts/UseCallback'
 // import HOCLayout from './layouts/Hoc'
 // import MemoExample from './layouts/Memo'
@@ -28,7 +28,7 @@ function App() {
                     {/* <Route path="/memo" component={MemoExample} /> */}
                     {/* <Route path="/hoc" component={HOCLayout} /> */}
                     {/* <Route path="/useCallback" component={UseCallbackExample} /> */}
-                    {/* <Route path="/useMemo" component={UseMemoExample} /> */}
+                    <Route path="/useMemo" component={UseMemoExample} />
                     <Route path="/useRef" component={UseRefExample} />
                     <Route path="/useEffect" exact component={UseEffect} />
                     <Route path="/usestate" exact component={UseState} />

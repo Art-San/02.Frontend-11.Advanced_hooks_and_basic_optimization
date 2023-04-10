@@ -19,6 +19,7 @@ const ComplexCalculateExample = () => {
     }, [buttonColor])
     // useMemo(() => runFactorial(value), [value])
     const fact = useMemo(() => runFactorial(value), [value])
+    // const fact = runFactorial(value)
     return (
         <>
             <CardWrapper>
