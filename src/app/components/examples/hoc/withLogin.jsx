@@ -19,7 +19,7 @@ const withLogin = (Component) => (props) => {
     // console.log('props', props)
     const isLogin = localStorage.getItem('auth')
     // const isLogin = true
-    // console.log('isLogin', isLogin)
+    console.log('isLogin', isLogin)
     return (
         <>
             {isLogin ? <Component {...props} /> : <SmallTitle>Auth</SmallTitle>}

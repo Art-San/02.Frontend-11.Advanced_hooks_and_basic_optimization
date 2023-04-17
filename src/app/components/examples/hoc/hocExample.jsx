@@ -33,17 +33,17 @@ const HOCExample = () => {
             <CardWrapper>
                 <SmallTitle>1. Обычный компонент</SmallTitle>
                 <Divider />
-                <Component/>
+                <Component />
             </CardWrapper>
             <CardWrapper>
                 <SmallTitle>2. Функциональный HOC</SmallTitle>
                 <Divider />
-                <ComponentWithAuth name='Тишь'/>
+                <ComponentWithAuth name="Тишь" />
             </CardWrapper>
             <CardWrapper>
                 <SmallTitle>3. HOC With Styles and Props</SmallTitle>
                 <Divider />
-                <ComponentWithPropsStyles/>
+                <ComponentWithPropsStyles />
             </CardWrapper>
             <CardWrapper>
                 <SmallTitle>4. Composed HOC</SmallTitle>

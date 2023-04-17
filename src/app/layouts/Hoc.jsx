@@ -11,6 +11,10 @@ const HOCLayout = () => {
     return (
         <>
             <Title>HOC</Title>
+            <p className="text-danger text-center">
+                С HOC них можно переиспользовать один и тот же функционал для
+                нескольких компонентов.
+            </p>
             <Collapse title="Информация">
                 <BlockQuoteWrapper>
                     <p>
