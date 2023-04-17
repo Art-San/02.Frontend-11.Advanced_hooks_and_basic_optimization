@@ -11,6 +11,10 @@ const CloneElement = () => {
     return (
         <>
             <Title>React.cloneElement</Title>
+            <p className="text-danger text-center">
+                С помощью него можно клонировать React элемент, добавляя или
+                изменяя его параметры
+            </p>
             <CollapseWrapper>
                 <BlockQuote>
                     <p>
