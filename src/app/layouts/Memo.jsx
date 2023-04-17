@@ -13,6 +13,10 @@ const MemoExample = () => {
     return (
         <>
             <Title>React.Memo</Title>
+            <p className="text-danger text-center">
+                С React.Memo него можно оптимизировать количество ререндеров
+                целого компонента.
+            </p>
             <CollapseWrapper>
                 <BlockQuoteWrapper>
                     <p>
