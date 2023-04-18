@@ -63,7 +63,7 @@ const EditUserPage = () => {
         }
     }
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 ">
             <div className="row">
                 <div className="col-md-6 offset-md-3 shadow p-4">
                     {!isLoading && Object.keys(professions).length > 0 ? (
@@ -72,15 +72,8 @@ const EditUserPage = () => {
                             validatorConfig={validatorConfig}
                             defaultData={data}
                         >
-                            <TextField
-                                label="Имя"
-                                name="name"
-                                autoFocus
-                            />
-                            <TextField
-                                label="Электронная почта"
-                                name="email"
-                            />
+                            <TextField label="Имя" name="name" autoFocus />
+                            <TextField label="Электронная почта" name="email" />
                             <SelectField
                                 label="Выбери свою профессию"
                                 defaultOption="Choose..."
@@ -89,7 +82,6 @@ const EditUserPage = () => {
                             />
                             <button
                                 type="submit"
-
                                 className="btn btn-primary w-100 mx-auto"
                             >
                                 Обновить
