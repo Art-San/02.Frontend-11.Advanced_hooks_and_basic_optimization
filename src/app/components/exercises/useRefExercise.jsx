@@ -2,8 +2,9 @@ import React, { useRef } from 'react'
 import CollapseWrapper from '../common/Collapse'
 const UseRefExercise = () => {
     const blockRef = useRef()
+    console.log('blokRef', blockRef)
     const handleClick = () => {
-        blockRef.current.children[0].innerText = 'Text'
+        blockRef.current.children[1].innerText = 'Text'
         blockRef.current.style.width = '150px'
         blockRef.current.style.height = '80px'
     }
@@ -27,8 +28,11 @@ const UseRefExercise = () => {
                 }}
             >
                 <small>Блок</small>
+                <small>Илок2</small>
             </div>
-            <button className="btn btn-secondary my-4" onClick={handleClick}>Жми</button>
+            <button className="btn btn-secondary my-4" onClick={handleClick}>
+                Жми
+            </button>
         </CollapseWrapper>
     )
 }

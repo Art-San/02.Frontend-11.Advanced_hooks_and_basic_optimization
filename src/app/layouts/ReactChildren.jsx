@@ -11,7 +11,10 @@ const ReactChildren = () => {
     return (
         <>
             <h1>Children</h1>
-
+            <p className="text-danger text-center">
+                С помощью React.Children можно использовать полезные функции для
+                работы с props.children.
+            </p>
             <CollapseWrapper title="Что такое Children">
                 <figure>
                     <blockquote>

@@ -93,7 +93,7 @@ const NavBar = () => {
                         React.cloneElement
                     </NavLink>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                     <NavLink
                         className="nav-link "
                         aria-current="page"
@@ -101,7 +101,7 @@ const NavBar = () => {
                     >
                         React Children
                     </NavLink>
-                </li> */}
+                </li>
             </ul>
         </nav>
     )
