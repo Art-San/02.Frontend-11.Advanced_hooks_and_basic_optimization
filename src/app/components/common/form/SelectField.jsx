@@ -20,9 +20,9 @@ const SelectField = ({
     const optionsArray =
         !Array.isArray(options) && typeof options === 'object'
             ? Object.keys(options).map((optionName) => ({
-                name: options[optionName].name,
-                value: options[optionName]._id
-            }))
+                  name: options[optionName].name,
+                  value: options[optionName]._id
+              }))
             : options
 
     return (
@@ -61,4 +61,4 @@ SelectField.propTypes = {
     options: PropTypes.oneOfType([PropTypes.object, PropTypes.array])
 }
 
-export default React.memo(SelectField)
+export default React.memo(SelectField) // Оптимизация ререндеринга полей формы

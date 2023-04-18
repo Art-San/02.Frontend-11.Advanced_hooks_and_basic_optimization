@@ -59,4 +59,4 @@ TextField.propTypes = {
     error: PropTypes.string
 }
 
-export default React.memo(TextField)
+export default React.memo(TextField) // Оптимизация ререндеринга полей формы

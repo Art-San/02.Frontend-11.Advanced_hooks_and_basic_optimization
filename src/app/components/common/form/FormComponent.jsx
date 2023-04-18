@@ -12,14 +12,18 @@ const FormComponent = ({
     const [errors, setErrors] = useState({})
 
     const handleChange = useCallback(
+        // Оптимизация ререндеринга полей формы
         (target) => {
             setData((prevState) => ({
                 ...prevState,
                 [target.name]: target.value
             }))
-        }, [])
+        },
+        []
+    )
 
     const validate = useCallback(
+        // Оптимизация ререндеринга полей формы
         (data) => {
             const errors = validator(data, validatorConfig)
             setErrors(errors)
@@ -82,9 +86,7 @@ const FormComponent = ({
         }
         return React.cloneElement(child, config)
     })
-    return (
-        <form onSubmit={handleSubmit}>{clonedElement}</form>
-    )
+    return <form onSubmit={handleSubmit}>{clonedElement}</form>
 }
 FormComponent.propTypes = {
     children: PropTypes.oneOfType([
