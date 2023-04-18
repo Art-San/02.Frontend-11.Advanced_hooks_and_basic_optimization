@@ -8,7 +8,7 @@ const SelectField = ({
     defaultOption,
     options,
     error,
-    ...rest
+    ...rest // Переход на следующее поле при нажатии Enter
 }) => {
     const handleChange = ({ target }) => {
         onChange({ name: target.name, value: target.value })
@@ -36,7 +36,7 @@ const SelectField = ({
                 name="profession"
                 value={value}
                 onChange={handleChange}
-                {...rest}
+                {...rest} // Переход на следующее поле при нажатии Enter
             >
                 <option disabled value="">
                     {defaultOption}
@@ -61,4 +61,4 @@ SelectField.propTypes = {
     options: PropTypes.oneOfType([PropTypes.object, PropTypes.array])
 }
 
-export default React.memo(SelectField) // Оптимизация ререндеринга полей формы
+export default React.memo(SelectField)

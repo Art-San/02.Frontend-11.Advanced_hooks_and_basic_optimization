@@ -11,19 +11,14 @@ const FormComponent = ({
     const [data, setData] = useState(defaultData || {})
     const [errors, setErrors] = useState({})
 
-    const handleChange = useCallback(
-        // Оптимизация ререндеринга полей формы
-        (target) => {
-            setData((prevState) => ({
-                ...prevState,
-                [target.name]: target.value
-            }))
-        },
-        []
-    )
+    const handleChange = useCallback((target) => {
+        setData((prevState) => ({
+            ...prevState,
+            [target.name]: target.value
+        }))
+    }, [])
 
     const validate = useCallback(
-        // Оптимизация ререндеринга полей формы
         (data) => {
             const errors = validator(data, validatorConfig)
             setErrors(errors)
@@ -45,6 +40,7 @@ const FormComponent = ({
         }
     }, [data])
 
+    // Переход на следующее поле при нажатии Enter
     const handleKeyDown = useCallback((event) => {
         if (event.keyCode === 13) {
             event.preventDefault()
@@ -71,7 +67,7 @@ const FormComponent = ({
                 onChange: handleChange,
                 value: data[child.props.name] || '',
                 error: errors[child.props.name],
-                onKeyDown: handleKeyDown
+                onKeyDown: handleKeyDown // Переход на следующее поле при нажатии Enter
             }
         }
         if (childType === 'string') {
