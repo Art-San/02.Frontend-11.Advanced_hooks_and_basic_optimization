@@ -72,7 +72,11 @@ const EditUserPage = () => {
                             validatorConfig={validatorConfig}
                             defaultData={data}
                         >
-                            <TextField label="Имя" name="name" autoFocus />
+                            <TextField
+                                label="Имя"
+                                name="name"
+                                autoFocus // Автофокус поля при открытии формы
+                            />
                             <TextField label="Электронная почта" name="email" />
                             <SelectField
                                 label="Выбери свою профессию"

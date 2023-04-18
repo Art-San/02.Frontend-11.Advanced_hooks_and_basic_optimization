@@ -26,7 +26,7 @@ const TextField = ({ label, type, name, value, onChange, error, ...rest }) => {
                     value={value}
                     onChange={handleChange}
                     className={getInputClasses()}
-                    {...rest}
+                    {...rest} // Автофокус поля при открытии формы
                 />
                 {type === 'password' && (
                     <button
